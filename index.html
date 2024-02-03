@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100vw;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #34495e;
+        }
+        .box{
+            width: 60%;
+            height: 80%;
+            background-color: #ecf0f1;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            padding: 15px;
+            overflow-y:auto;
+        }
+        #item{
+            width: 100%;
+            height:50px;
+            font-family: 'Protest Riot', sans-serif;
+            border: 0px;
+            outline: 0px;
+            box-shadow: 0px 0px 2px black;
+            font-size: 25px;
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+        #to-do-box{
+            list-style: none;
+            margin-top: 20px
+        }
+        #to-do-box li{
+            background-color:#34495e;
+            color:#ecf0f1;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+            text-align: justify;
+            margin-top:10px ;
+            user-select: none;
+        }
+        #to-do-box li i{
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: red;
+          
+        }
+        .done{
+            text-decoration: line-through;
+            background-color:#34495e6b !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <input type="text" id="item" autofocus placeholder="Add things to your list...">
+            <ul id="to-do-box">
+                
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
